@@ -4,8 +4,6 @@ import json
 class Todo:
     def __init__(self) -> None:
         self.items: list[str] = []
-        self._get_tasks()
-        self.sort: bool = False
 
     def _get_tasks(self) -> None:
         with open("data.json") as f:
